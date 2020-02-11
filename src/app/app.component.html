@@ -1,0 +1,9 @@
+ <div>
+      <h2>Hello {{name}}</h2>
+      <div [formGroup]="form">
+         <input type="text" formControlName="name" *ngIf="false">
+      </div>
+      <button (click)="add()">Add Button</button>
+      <button (click)="remove()">Remove Button</button>
+      Is Form Valid? : <strong>{{form.valid}}</strong>
+    </div>
